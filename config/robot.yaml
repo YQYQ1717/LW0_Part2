@@ -1,5 +1,9 @@
-robot_ip: "127.0.0.1" #robot_ip: "192.168.1.189"
+robot_ip: "127.0.0.1"
 is_radian: false
+
+# true = firmware simulator at home
+# false = real Lite 6
+firmware_simulator: true
 
 home:
   - -0.4
@@ -9,7 +13,12 @@ home:
   - 51.2
   - 15.3
 
+home_speed: 20
+
+# Course hardware safety limits
 joint_speed_limit: 54
 tcp_speed_limit: 150
 
+# Real bench boundary was not obtained.
+# Do not invent values.
 tcp_boundary: null
